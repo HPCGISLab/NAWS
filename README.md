@@ -15,8 +15,9 @@ Installation
 
 2. Change file modes to be executable
 
-chmod 755 ~/workflow/bin/*.py
-chmod 755 ~/workflow/bin/*.sh
+   <code>chmod 755 ~/workflow/bin/*.py</code>
+   
+   <code>chmod 755 ~/workflow/bin/*.sh</code>
 
 3. Modify system-level configuration files
    - Open runexperiment.sh and modify parameters based on system configuration
@@ -27,6 +28,6 @@ Example
 ---
 4. Enter into a directory with a NetLogo model with defined experiment
 
-5. Execute the NAWS using ~/workflow/bin/run/runexperiment.sh <Netlogo model name> <Experiment name>
-   A new directory containing all of the parameter files and sub-experiment information will be created along with multiple table files containing the results of each sub-experiment
+5. Execute the NAWS using <code>~/workflow/bin/run/runexperiment.sh &lt;Netlogo model name&gt; &lt;Experiment name&gt;</code>
+6. A new directory containing all of the parameter files and sub-experiment information will be created along with multiple table files containing the results of each sub-experiment once the jobs submitted to the batch system are finished executing.
 
