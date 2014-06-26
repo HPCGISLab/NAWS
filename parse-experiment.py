@@ -234,13 +234,13 @@ def main():
         f=open(modelfilename)
         exptext=parseexperiment(f)
         f.close()
-
-        # Generate the job files after decomposing the experiment 
-        generateexperiments(exptext,experimentname,numberofsubexperiments,subexperimentdirectory)
-
     except IOError:
-        print ' [ ERROR ] Cannot open file %s'%filename
+        print ' [ ERROR ] Cannot open file %s'%modelfilename
         sys.exit(1)
+
+    # Generate the job files after decomposing the experiment 
+    generateexperiments(exptext,experimentname,numberofsubexperiments,subexperimentdirectory)
+
 
 # Run main
 if __name__=="__main__":

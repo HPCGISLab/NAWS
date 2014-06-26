@@ -123,7 +123,7 @@ def main():
 
     # Submit the scripts
     for submitfile in submitfiles:
-        returncode=subprocess.check_call("qsub "+submitfile,shell=True)
+        returncode=subprocess.check_call("echo not really submitting - qsub "+submitfile,shell=True)
         print "Submitted",submitfile,"with return code =",returncode
 
 # Run main
